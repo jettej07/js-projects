@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <title>Our Reviews</title>
+  </head>
+  <body>
+    <main>
+      <div class="title">
+        <h1>Our Reviews</h1>
+        <div class="underline"></div>
+      </div>
+      <div class="card">
+        <div class="img-container">
+          <div class="quote-container">
+            <img class="main-img" src="" alt="" />
+            <i class="fas fa-quote-right"></i>
+          </div>
+          <div class="img-bg"></div>
+        </div>
+        <div class="card-info">
+          <h4 class="name"></h4>
+          <h4 class="profession"></h4>
+          <p class="review-text"></p>
+        </div>
+        <div class="arrow-container">
+          <i onclick="decreaseCount()" class="fas fa-chevron-left fa-lg"></i>
+          <i onclick="increaseCount()" class="fas fa-chevron-right fa-lg"></i>
+        </div>
+        <button onclick="randomCount()" class="btn">Surprise Me</button>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

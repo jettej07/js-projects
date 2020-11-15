@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --main-blue: #49a6e9;
+  --secondary-blue: hsl(205, 90%, 88%);
+  --bg-light-grey: #f1f5f8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: var(--bg-light-grey);
+}
+
+nav {
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: var(--main-blue);
+  margin: 0.3rem;
+  padding: 0.1rem;
+}
+
+.logo-menu-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 1rem;
+  align-items: center;
+}
+
+.logo {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nav-dropdown {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40vw;
+  cursor: pointer;
+}
+
+.nav-dropdown h4 {
+  font-weight: lighter;
+  transition: all 0.2s;
+}
+
+.nav-dropdown h4:hover {
+  color: var(--main-blue);
+}
+
+.menu {
+  display: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.menu:hover {
+  transform: rotateZ(90deg);
+}
+
+.social-links {
+  display: flex;
+  width: 7vw;
+  justify-content: space-between;
+  color: var(--main-blue);
+}
+
+.fab {
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.fab:hover {
+  color: var(--secondary-blue);
+}
+
+@media screen and (max-width: 768px) {
+  .social-links {
+    display: none;
+  }
+  .nav-dropdown {
+    position: absolute;
+    display: block;
+    height: 0;
+    width: 100%;
+    top: 3.9rem;
+    left: 0;
+    transition: all 0.3s linear;
+    overflow: hidden;
+    background: #fff;
+  }
+  .nav-dropdown h4 {
+    padding: 0.5rem 2rem;
+    transition: all 0.3s linear;
+  }
+  .nav-dropdown h4:hover {
+    transform: translateX(0.7rem);
+  }
+  .nav-home:hover,
+  .nav-about:hover,
+  .nav-projects:hover,
+  .nav-contact:hover {
+    background-color: var(--secondary-blue);
+    color: var(--main-blue);
+  }
+  .menu {
+    display: block;
+  }
+}
+
+.show {
+  height: 31%;
+}

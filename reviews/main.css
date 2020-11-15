@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --main-blue: #49a6e9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f1f5f8;
+}
+
+.card {
+  margin: 4em auto 0 auto;
+  background-color: #fff;
+  width: 80vw;
+  max-width: 768px;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  margin: 7rem 0 2rem 0;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+.underline {
+  height: 4px;
+  width: 70px;
+  background-color: var(--main-blue);
+  margin: 0.8rem auto;
+}
+
+.main-img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.img-bg {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: var(--main-blue);
+  position: absolute;
+  transform: translate(8px, -4px);
+}
+
+.quote-container {
+  z-index: 2;
+  position: relative;
+}
+
+.fa-quote-right {
+  color: #fff;
+  background-color: var(--main-blue);
+  position: absolute;
+  z-index: 3;
+  border-radius: 50%;
+  padding: 0.8rem;
+  left: 0;
+}
+
+.card-info {
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: none;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.name {
+  margin: 2rem 0 0.2rem 0;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+}
+
+.profession {
+  color: var(--main-blue);
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.arrow-container {
+  color: var(--main-blue);
+  text-align: center;
+}
+
+.arrow-container > .fas {
+  margin: 1rem 0.5rem 0 0.5rem;
+  cursor: pointer;
+}
+
+.btn {
+  outline: none;
+  border: 2px solid var(--main-blue);
+  color: var(--main-blue);
+  display: block;
+  margin: 1rem auto;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  background-color: #ebf7ff;
+  transition: all 0.15s linear;
+}
+
+.btn:hover {
+  background-color: var(--main-blue);
+  color: white;
+  cursor: pointer;
+}
+
+.review-text {
+  color: #617da5;
+}
